@@ -1,11 +1,11 @@
 const http = require('http');
 
 http.createServer(function (request, response) {
+
+  msg='*** Hello World 2  Ver 1.0.0 ***';
    
-  console.log('*** Hello World 2  Ver 1.0.0 ***');
-
+  console.log(msg);
   console.log('@method=' + request.method);
-
   console.log('@headers=' + JSON.stringify(request.headers));
 
   if (request.method == 'POST') {
